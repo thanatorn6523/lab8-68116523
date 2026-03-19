@@ -1,0 +1,97 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>หน้าแรก</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">TNT shop</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">หน้าแรก</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'form' %}">แบบฟอร์ม</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">เกี่ยวกับ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<section class="hero d-flex align-items-center text-white text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">ยินดีต้อนรับ 👋</h1>
+        <p class="lead">ร้านอุปกรณ์คอมครบถ้วน ของแท้100%</p>
+    </div>
+</section>
+
+<!-- สินค้า -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">สินค้าแนะนำ 💻</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://attackshark.de/cdn/shop/files/3_5903f8ba-cd09-4b98-9443-1e2a658243d1.png" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Gaming Mouse</h5>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#p1">ดูรายละเอียด</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_SL1500_.jpg" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Mechanical Keyboard</h5>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#p2">ดูรายละเอียด</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2a-1vU-wPMeosQeWJDPsRAxUmFV7KXlEA3w&s" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Gaming Headset</h5>
+                    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#p3">ดูรายละเอียด</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer text-center text-white mt-5 p-4">
+    <div class="mb-3">
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white">Line</a>
+    </div>
+    <p class="mb-0">© 2026 Thanatorn Namkon 68116523.</p>
+</footer>
+
+<!-- JS (ย้ายมาล่าง) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

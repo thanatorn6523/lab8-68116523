@@ -1,0 +1,106 @@
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #020617, #1e293b);
+}
+
+/* Banner */
+.hero {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
+    position: relative;
+}
+
+/* ข้อความใน banner */
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Content */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ปุ่ม */
+button, .btn-dark {
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover, .btn-dark:hover {
+    background: #0ea5e9;
+}
+
+/* Card */
+.card {
+    background: #1e293b;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* หัวข้อ */
+h1, h2, h3, h5 {
+    color: #38bdf8;
+}
+
+/* รูป */
+img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #020617, #1e293b);
+    border-top: 1px solid #38bdf8;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #38bdf8;
+}
